@@ -1,0 +1,91 @@
+header {
+  margin-inline: auto;
+}
+
+.input-wrapper {
+  display: grid;
+  align-content: center;
+}
+
+
+#add-item {
+  padding: 1rem;
+  max-width: 100%;
+  border-radius: 0.875rem;
+  border: 2px solid var(--content-tertiary);
+  margin-top: 2.5rem;
+}
+
+button {
+  padding: 1rem;
+  max-width: 100%;
+  border-radius: 0.875rem;
+  margin-top: 1rem;
+  background-color: var(--color-brand);
+  color: var(--always-white);
+  border: none;
+  margin-bottom: 2.5rem;
+}
+
+.input-check {
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  background-color: var(--always-white);
+  align-items: center;
+  justify-items: center;
+  margin-bottom: .75rem;
+  display: flex;
+  color: var(--content-secondary);
+  line-height: 20px;
+  font: medium;
+
+  & input {
+    border-radius: 1rem;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  & span {
+    margin-left: .75rem;
+  }
+
+  & a {
+    margin-left: auto;
+   }
+}
+
+@media (width >= 80em) {
+
+  header {
+    text-align: center;
+  }
+  .input-button {
+    display: flex;
+  }
+  .input-wrapper {
+    width: 70%;
+    display: flex;
+    gap: 1rem;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  #add-item {
+    padding: .875rem;
+    width: 70%;
+    border-radius: 0.875rem;
+    border: 2px solid var(--content-tertiary);
+    margin-top: 2.5rem;
+  }
+  
+  button {
+    border-radius: 0.875rem;
+    width: 30%;
+    margin-top: 2.5rem; 
+    background-color: var(--color-brand);
+    color: var(--always-white);
+    border: none;
+    margin-bottom: 2.5rem;
+  }
+}
