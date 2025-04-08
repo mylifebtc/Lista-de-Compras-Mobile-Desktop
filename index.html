@@ -11,21 +11,23 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
+  <div class="header">
+    <header>
       <img src="/assets/logo.svg" alt="Logo web" id="logo-web" class="desktop-only">
-  </header>
-
-  <div class="head">
-    <a href="#">
-      <img src="/assets/icons/Lista de compras/link button.svg" alt="">
-    </a>
-
-    <h1 class="week">
-      Compras da semana
-    </h1>
+    </header>
+    
+    <div class="head">
+      <a href="#">
+        <img src="/assets/icons/Lista de compras/link button.svg" alt="">
+      </a>
+      
+      <h1 class="week">
+        Compras da semana
+      </h1>
+    </div>
   </div>
 
-  <form>
+  <form class="container">
     <div class="input-button">
       <div class="input-wrapper">
         <input type="text" name="item" id="add-item" placeholder="Adicione um novo item">
@@ -35,43 +37,43 @@
 
       <div class="products">
         <div class="input-check">
-          <input type="checkbox" name="bread" value="bread">
-          <span>
+          <input type="checkbox" name="bread" value="bread" id="bread">
+          <label for="bread">
             Pão de forma
-          </span>
-          <a href="#">
+          </label>
+          <span>
             <img src="/assets/icons/Lista de compras/icon delete.svg" alt="icone de lixeira">
-          </a>
+          </span>
         </div>
 
         <div class="input-check">
-          <input type="checkbox" name="coffe" value="coffe">
-          <span>
+          <input type="checkbox" name="coffe" value="coffe" id="coffe">
+          <label for="coffe">
             Café preto
-          </span>
-          <a href="#">
+          </label>
+          <span>
             <img src="/assets/icons/Lista de compras/icon delete.svg" alt="icone de lixeira">
-          </a>
+          </span>
         </div>
 
         <div class="input-check">
-          <input type="checkbox" name="orange" value="orange">
-          <span>
+          <input type="checkbox" name="orange" value="orange" id="orange">
+          <label for="orange">
             Suco de laranja
-          </span>
-          <a href="#">
+          </label>
+          <span>
             <img src="/assets/icons/Lista de compras/icon delete.svg" alt="icone de lixeira">
-          </a>
+          </span>
         </div>
 
         <div class="input-check">
-          <input type="checkbox" name="cookie" value="cookie">
-          <span>
+          <input type="checkbox" name="cookie" value="cookie" id="cookie">
+          <label for="cookie">
             Bolacha
-          </span>
-          <a href="#">
+          </label>
+          <span>
             <img src="/assets/icons/Lista de compras/icon delete.svg" alt="icone de lixeira">
-          </a>
+          </span>
         </div>
 
         

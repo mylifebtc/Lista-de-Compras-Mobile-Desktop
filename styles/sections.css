@@ -5,6 +5,7 @@ header {
 .input-wrapper {
   display: grid;
   align-content: center;
+  margin-top: 2.75rem;
 }
 
 
@@ -12,8 +13,20 @@ header {
   padding: 1rem;
   max-width: 100%;
   border-radius: 0.875rem;
-  border: 2px solid var(--content-tertiary);
-  margin-top: 2.5rem;
+  border: 1px solid var(--border-primary);
+  margin: 0;
+
+  &:hover {
+    border: 1px solid var(--border-hover);
+  }
+
+  &:focus {
+    border: 1px solid var(--color-brand);
+  }
+}
+
+#add-item:focus {
+  outline: 1px solid var(--color-brand);
 }
 
 button {
@@ -39,22 +52,35 @@ button {
   line-height: 20px;
   font: medium;
 
-  & input {
-    border-radius: 1rem;
-    width: 1rem;
-    height: 1rem;
-  }
 
   & span {
-    margin-left: .75rem;
-  }
-
-  & a {
     margin-left: auto;
    }
 }
 
+label {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  color: var(--content-secondary);
+}
+
+input::placeholder {
+  color: var(--content-tertiary);
+}
+
 @media (width >= 80em) {
+  .container {
+    padding-inline: 20rem;
+  }
+
+  .head > a {
+    margin-left: 1rem;
+  }
+
+  .header {
+    padding-inline: 19rem;
+  }
 
   header {
     text-align: center;
@@ -63,20 +89,33 @@ button {
     display: flex;
   }
   .input-wrapper {
-    width: 70%;
+    width: 100%;
     display: flex;
     gap: 1rem;
     justify-items: center;
     align-items: center;
     align-content: center;
+    margin-top: 0;
   }
 
   #add-item {
     padding: .875rem;
     width: 70%;
     border-radius: 0.875rem;
-    border: 2px solid var(--content-tertiary);
-    margin-top: 2.5rem;
+    border: 1px solid var(--border-primary);
+    margin: 0;
+
+    &:hover {
+      border: 1px solid var(--border-hover);
+    }
+
+    &:focus {
+      border: 1px solid var(--color-brand);
+    }
+  }
+
+#add-item:focus {
+    outline: 1px solid var(--color-brand);
   }
   
   button {
@@ -86,6 +125,5 @@ button {
     background-color: var(--color-brand);
     color: var(--always-white);
     border: none;
-    margin-bottom: 2.5rem;
   }
 }
