@@ -13,4 +13,21 @@ addButton.addEventListener('click', function(){
             <img src="/assets/icons/Lista de compras/icon delete.svg" alt="icone de lixeira" id="trash">
           </span>`
   lista.appendChild(item)
+
+
+  const trash = document.getElementById('trash')
+    trash.addEventListener('click', function(){
+  item.remove()
+
+  setTimeout(function(){
+    document.getElementById("alert").style.display = "flex";
+
+  const del = document.getElementById('delete')
+    del.addEventListener("click", function(){
+      document.getElementById("alert").style.display = "none";})
+
+  }, 1)
+  
 })
+})
+

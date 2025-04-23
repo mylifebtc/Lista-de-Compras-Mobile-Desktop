@@ -1,0 +1,27 @@
+#alert {
+ background-color: var(--color-danger);
+ padding: 0.75rem;
+ color: var(--always-white);
+ border-radius: .75rem;
+ display: none;
+ gap: .5rem;
+ margin-top: 2.25rem;
+  & span {
+    margin-right: auto;
+  }
+}
+
+
+
+@media (width >= 80em){
+  #alert {
+    display: none;
+    background-color: var(--color-danger);
+    padding: 0.75rem;
+    color: var(--always-white);
+    border-radius: .75rem;
+    gap: .5rem;
+    margin-top: 2.25rem;
+   }
+
+}
