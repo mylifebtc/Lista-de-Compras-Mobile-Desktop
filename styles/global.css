@@ -40,7 +40,8 @@ html {
 @media (width >= 75em) {
 
  body {
-  width: 80em;
+  width: 100%;
+  max-width: 100%;
  }
  
   .desktop-only {
