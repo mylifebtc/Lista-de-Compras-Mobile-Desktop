@@ -9,7 +9,7 @@ input[type="checkbox"] + label:before {
   width: 1rem;
   height: 1rem; 
   border-radius: .35rem;
-  background: url(/assets/check-off.svg);
+  background: url(../assets/check-off.svg);
   background-size: 1rem 1rem;
   margin-right: .5rem;
 
@@ -21,7 +21,7 @@ input[type="checkbox"]:hover + label:before {
   width: 1rem;
   height: 1rem; 
   border-radius: .35rem;
-  background: url(/assets/check-hover.svg) no-repeat;
+  background: url(../assets/check-hover.svg) no-repeat;
   background-size: 1rem 1rem;
 }
 
@@ -31,7 +31,7 @@ input[type="checkbox"]:checked + label:before {
   width: 1rem;
   height: 1rem; 
   border-radius: .35rem;
-  background: url(/assets/check-on.svg) no-repeat;
+  background: url(../assets/check-on.svg) no-repeat;
   background-size: 1rem 1rem;
 }
 
