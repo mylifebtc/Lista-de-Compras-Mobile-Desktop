@@ -10,7 +10,7 @@ addButton.addEventListener('click', function(){
             ${input.value}
           </label>
           <span>
-            <img src="/assets/icons/Lista de compras/icon-delete.svg" alt="icone de lixeira" id="trash">
+            <img src="assets/icons/Lista de compras/icon-delete.svg" alt="icone de lixeira" id="trash">
           </span>`
   lista.appendChild(item)
 
