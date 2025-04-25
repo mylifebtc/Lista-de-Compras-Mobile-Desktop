@@ -5,12 +5,12 @@ const lista = document.querySelector("ul")
 addButton.addEventListener('click', function(){
   const item = document.createElement('li')
   item.classList.add('input-check')
-  item.innerHTML = `<input type="checkbox" name="bread" value="bread" id="bread">
-          <label for="bread">
+  item.innerHTML = `<input type="checkbox" name="${input.value}" value="${input.value}" id="${input.value}">
+          <label for="${input.value}">
             ${input.value}
           </label>
           <span>
-            <img src="/assets/icons/Lista de compras/icon delete.svg" alt="icone de lixeira" id="trash">
+            <img src="/assets/icons/Lista de compras/icon-delete.svg" alt="icone de lixeira" id="trash">
           </span>`
   lista.appendChild(item)
 
